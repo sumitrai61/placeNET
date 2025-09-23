@@ -1,0 +1,180 @@
+import React from 'react'
+
+const Body = () => {
+    return (
+        <>
+            <div className="container">
+                    <div class="box">
+                    </div>
+                <div className="home">
+                    <div id='info'>
+                        <h1>Streamlining MCA Placements</h1>
+                        <h1> at DU</h1>
+                        <span>Connecting Coordinators, HRs, Seniors, and Juniors seamlessly</span>
+                        <span> for a smarter placement experience.</span>
+                    </div>
+                    <div id='home-btn'>
+                        <button className='home-btn'>Login</button>
+                        <button className='home-btn'>SignUp</button>
+                    </div>  
+                    <div className='stats'>
+                        <div><h1>500</h1> <span>Students</span></div>
+                        <div><h1>150</h1> <span>Companies</span></div>
+                        <div><h1>95%</h1> <span>Placement</span></div>
+                        <div><h1>12LPA</h1> <span>LPA Average</span></div>
+                    </div>
+                </div>
+            </div>
+            <section className="profession">
+                    <div id='heading'>
+                        <h1>Choose Your Role</h1>
+                        <span>Access tailored features designed specifically for your role</span>
+                        <span> in the placement process </span>
+                    </div>
+                    <div className="cards">
+
+                    
+                    <div className="card">
+                        <div className='svg'><img src="public/bus.svg" alt="" /></div>
+                        <h3>Placement Coordinator</h3>
+                        <span>Manage HR coordination, scheduling, and placement activities</span>
+                        <div className="functions">
+                            <div className='justify'>
+                                <img src="public/tick.svg" alt="" />
+                                <p>Schedule interviews</p>
+                            </div>
+                            <div className='justify'>
+                                <img src="public/tick.svg" alt="" />
+                                <p>Schedule interviews</p>
+                            </div>
+                            <div className='justify'>
+                                <img src="public/tick.svg" alt="" />
+                                <p>Schedule interviews</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="card">
+                        <div className='svg'><img src="public/bag.svg" alt="" /></div>
+                        <h3>HR / Hiring Team</h3>
+                        <span>Access student profiles and manage recruitment process</span>
+                        <div className="functions">
+                            <div className='justify'>
+                                <img src="public/tick.svg" alt="" />
+                                <p>Schedule interviews</p>
+                            </div>
+                            <div className='justify'>
+                                <img src="public/tick.svg" alt="" />
+                                <p>Schedule interviews</p>
+                            </div>
+                            <div className='justify'>
+                                <img src="public/tick.svg" alt="" />
+                                <p>Schedule interviews</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="card">
+                        <div className='svg'><img src="public/cap.svg" alt="" /></div>
+                        <h3>Senior Student</h3>
+                        <span>Share experiences and mentor junior students</span>
+                        <div className="functions">
+                            <div className='justify'>
+                                <img src="public/tick.svg" alt="" />
+                                <p>Schedule interviews</p>
+                            </div>
+                            <div className='justify'>
+                                <img src="public/tick.svg" alt="" />
+                                <p>Schedule interviews</p>
+                            </div>
+                            <div className='justify'>
+                                <img src="public/tick.svg" alt="" />
+                                <p>Schedule interviews</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="card">
+                        <div className='svg'><img src="public/person.svg" alt="" /></div>
+                        <h3>Junior Student</h3>
+                        <span>Track placements and learn from senior experiences</span>
+                        <div className="functions">
+                            <div className='justify'>
+                                <img src="public/tick.svg" alt="" />
+                                <p>Schedule interviews</p>
+                            </div>
+                            <div className='justify'>
+                                <img src="public/tick.svg" alt="" />
+                                <p>Schedule interviews</p>
+                            </div>
+                            <div className='justify'>
+                                <img src="public/tick.svg" alt="" />
+                                <p>Schedule interviews</p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+            </section>  
+            <section>
+                <div className="about">
+                    <div id='heading'>
+                        <h1>Why Choose Our Platform?</h1>
+                        <span>Experience seamless placement management with cutting-edge features designed for efficiency</span>
+                    </div>
+
+                    <div className="cards">
+                        <div className="about-card">
+                            <div className='svg'><img src="public/clock.svg" alt="" /></div>
+                        <h3>Real-Time Updates</h3>
+                        <p>Get instant notifications about interview schedules, results, and placement opportunities</p>
+                        </div>
+                        <div className="about-card">
+                            <div className='svg'><img src="public/person.svg" alt="" /></div>
+                        <h3>Collaborative Platform</h3>
+                        <p>Connect coordinators, HRs, and students in one unified ecosystem</p>
+                        </div>
+                        <div className="about-card">
+                            <div className='svg'><img src="public/tick.svg" alt="" /></div>
+                        <h3>Analytics Dashboard</h3>
+                        <p>Track placement statistics, success rates, and performance metrics</p>
+                        </div>
+                        <div className="about-card">
+                            <div className='svg'><img src="public/mobile.svg" alt="" /></div>
+                        <h3>Mobile Responsive</h3>
+                        <p>Access the platform seamlessly across all devices and screen sizes</p>
+                        </div>
+                        <div className="about-card">
+                            <div className='svg'><img src="public/guard.svg" alt="" /></div>
+                        <h3>Secure & Private</h3>
+                        <p>Enterprise-grade security with DU email authentication and data protection</p>
+                        </div>
+                        <div className="about-card">
+                            <div className='svg'><img src="public/cap.svg" alt="" /></div>
+                        <h3>Mentor Network</h3>
+                        <p>Connect with seniors for guidance, tips, and interview preparation</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div className="place-stats">
+                    <div id='heading'>
+                        <h1>Placement Success Statistics</h1>
+                        <span>Our track record speaks for itself - empowering students to achieve their career goals</span>
+                    </div>
+                    <div className='first'>
+                        <div><h1>2500</h1> <span>Students Placed</span></div>
+                        <div><h1>250</h1> <span>Partner Companies</span></div>
+                        <div><h1>96%</h1> <span>Placement Rate</span></div>
+                        <div><h1>15LPA</h1> <span>Highest Package</span></div>
+                    </div>
+                    <div className='first'>
+                        <div><h1>450</h1> <span>This Year Placements</span></div>
+                        <div><h1>85</h1> <span>Companies visiting</span></div>
+                        <div><h1>8.5 LPA</h1> <span>Average Package</span></div>
+                    </div>
+                </div>
+            </section>
+        </>
+    )
+}
+
+export default Body
