@@ -1,0 +1,82 @@
+.main{
+    border: 2px solid black;
+    width: 20%;
+    height: 100%;
+    position: fixed;
+}
+
+.heading{
+    padding: 10px;
+}
+.heading h1{
+    color: rgb(37 99 235);
+}
+.function{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    height: 65.35vh;
+    padding: 10px;
+}
+
+img{
+    width: 25px;
+    cursor: pointer;
+}
+
+.func-item{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 5px;
+    font-size: 14px;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: all 0.2s;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.func-item:hover{
+    background-color: rgb(229, 229, 229);
+}
+
+.line{
+    background-color: black;
+    height: 1px;
+    margin: 10px 0px;
+}
+
+.feature-bottom{
+    height: 12vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+.user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.2s;
+    padding: 0px 40px;
+    border-radius: 10px;
+}
+.user:hover{
+    background-color: rgb(229, 229, 229);
+}
+#name{
+    font-weight: bolder;
+}
+#role{
+    font-size: 14px;
+}
+#profile{
+    cursor: pointer;
+}
+#arrow{
+    margin-left: 30px;
+}
+
