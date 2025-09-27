@@ -5,7 +5,7 @@ const Footer = () => {
     <>
       <div className="footer">
         <div id='logo'>
-          <img src="public/DU_Logo.png" alt="" />
+          <img src="public/svgs/DU_Logo.png" alt="" />
           <h1>DU MCA PLACEMENT</h1>
         </div>
         <div>
