@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.nav {
+    display: flex;
+    gap: 34px;
+    position: sticky;
+    z-index: 10;
+    padding: 10px;
+    font-size: 20px;
+    justify-content: space-around;
+    color: white;
+}
+
+.nav li {
+    list-style: none;
+    cursor: pointer;
+}
+
+#logo {
+    width: 40px;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    font-weight: bolder;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-right a {
+    text-decoration: none;
+    transition: all 0.3s;
+    color: grey;
+    font-size: 15px;
+    margin: 0 5px;
+}
+
+.nav-right a:hover {
+    color: white;
+}
+
+.nav-right button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgb(37 99 235);
+    border: 1px solid rgb(37 99 235);
+    color: white;
+    margin: 0 5px;
+    font-weight: bolder;
+    transition: all 0.3s;   
+}
+
+
+.nav-right button:hover{
+    background-color: rgb(128, 160, 230);;
+    border: 1px solid black;
+}
+
+
+.container {
+    background-image: url('public/svgs/background.webp');
+    background-size: max(1520px, 100%);
+    top: 0;
+    width: 100%;
+    height:91.5vh;
+    /* position: absolute;  */
+}
+
+.container .box {
+    width: 100%;
+    height: 100vh;
+    opacity: 0.74;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+
+.home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    position: relative;
+    color: white;
+
+}
+
+#info h1 {
+    font-size: 70px;
+}
+
+#info span {
+    font-size: 25px;
+}
+
+#stats{
+    font-size: 25px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 30px 10px;
+    gap: 100px;
+}
+
+.home-btn {
+    padding: 7px 40px;
+    font-weight: bolder;
+    border-radius: 15px;
+    border: 1px solid rgb(37 99 235);
+    cursor: pointer;
+    margin: 5px;
+    background-color: rgb(37 99 235);
+    color: white;
+    margin-top: 30px;
+    transition: all 0.3s;
+}
+.home-btn:hover{
+    background-color: rgb(128, 160, 230);;
+    border: 1px solid black;
+}
+
+#stats {
+    display: flex;
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.card {
+    width: 12vw;
+    text-align: center;
+    border: 2px solid black;
+    padding: 25px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 0 20px;
+    background-color: rgb(194, 217, 239);
+    transition: all 0.3s;
+}
+
+.card:hover{
+    background-color: aliceblue;
+    width: 12.5vw;
+}
+
+.card p{
+    font-size: 15px;
+}
+
+.functions{
+    margin-top: 10px;
+}
+
+#heading {
+    text-align: center;
+    font-weight: bolder;
+}
+
+#heading span{
+    font-size: 20px;
+}
+
+#heading h1 {
+    font-size: 50px;
+    margin: 20px;
+}
+
+.profession {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    margin-top: 50px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+.card .svg img{
+    width: 50px;
+}
+
+.about{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.about-card{
+    width: 20vw;
+    border: 2px solid black;
+    padding: 30px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 0 20px;
+    background-color: rgb(194, 217, 239);
+    transition: all 0.3s;
+}
+
+.about-card img{
+    width: 35px;
+}
+
+.about-card:hover{
+    background-color: aliceblue;
+    width: 20.5vw;
+}
+
+.place-stats{
+    margin-top: 80px;
+    padding: 50px;
+    height: 70vh;
+    background-color:hsl(218.27deg 78.06% 46.47%);
+    color: white;
+}
+
+.place-stats .first{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 30px 10px;
+}
+
+.first h1{
+    font-size: 50px;
+}
+.first span{
+    font-size: 20px;
+}
+
+.footer{
+    width: 100%;
+    background-color: rgb(37, 36, 36);
+    color: white;
+    display: flex;
+    gap: 150px;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    position: absolute;
+}
+
+.footer h1{
+    font-size: 18px;
+}
+.footer #logo{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    
+}
+#logo img{
+    width: 30px ;
+    height: 30px ;
+
+}
+
+.separator{
+    width: 70%;
+    margin: auto;
+    height: 1px;
+    background-color: grey;
+    position: relative;
+    top: 250px;
+    text-align: center;
+    color: white;
+}
+
+#copyright{
+    position: relative;
+    top: 250px;
+    text-align: center;
+    color: white;
+    margin-top: 30px;
+}
+
+.foot-svg img{
+    filter: invert(1);
+    width: 20px;
+}
+
+.foot-svg{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+}
