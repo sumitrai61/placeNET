@@ -6,7 +6,7 @@ const Navbar = () => {
             <nav>
                 <ul className='nav'>
                     <div className='nav-left'>
-                        <img id='logo' src="public/DU_logo.png" alt="" />
+                        <img id='logo' src="public/svgs/DU_Logo.png" alt="" />
                         <span>DUCS PLACEMENTS </span>
                     </div>
                     <div className="nav-right">
