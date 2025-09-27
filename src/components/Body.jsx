@@ -35,77 +35,77 @@ const Body = () => {
 
                     
                     <div className="card">
-                        <div className='svg'><img src="public/bus.svg" alt="" /></div>
+                        <div className='svg'><img src="public/svgs/bus.svg" alt="" /></div>
                         <h3>Placement Coordinator</h3>
                         <span>Manage HR coordination, scheduling, and placement activities</span>
                         <div className="functions">
                             <div className='justify'>
-                                <img src="public/tick.svg" alt="" />
+                                <img src="public/svgs/tick.svg" alt="" />
                                 <p>Schedule interviews</p>
                             </div>
                             <div className='justify'>
-                                <img src="public/tick.svg" alt="" />
+                                <img src="public/svgs/tick.svg" alt="" />
                                 <p>Schedule interviews</p>
                             </div>
                             <div className='justify'>
-                                <img src="public/tick.svg" alt="" />
+                                <img src="public/svgs/tick.svg" alt="" />
                                 <p>Schedule interviews</p>
                             </div>
                         </div>
                     </div>
                     <div className="card">
-                        <div className='svg'><img src="public/bag.svg" alt="" /></div>
+                        <div className='svg'><img src="public/svgs/bag.svg" alt="" /></div>
                         <h3>HR / Hiring Team</h3>
                         <span>Access student profiles and manage recruitment process</span>
                         <div className="functions">
                             <div className='justify'>
-                                <img src="public/tick.svg" alt="" />
+                                <img src="public/svgs/tick.svg" alt="" />
                                 <p>Schedule interviews</p>
                             </div>
                             <div className='justify'>
-                                <img src="public/tick.svg" alt="" />
+                                <img src="public/svgs/tick.svg" alt="" />
                                 <p>Schedule interviews</p>
                             </div>
                             <div className='justify'>
-                                <img src="public/tick.svg" alt="" />
+                                <img src="public/svgs/tick.svg" alt="" />
                                 <p>Schedule interviews</p>
                             </div>
                         </div>
                     </div>
                     <div className="card">
-                        <div className='svg'><img src="public/cap.svg" alt="" /></div>
+                        <div className='svg'><img src="public/svgs/cap.svg" alt="" /></div>
                         <h3>Senior Student</h3>
                         <span>Share experiences and mentor junior students</span>
                         <div className="functions">
                             <div className='justify'>
-                                <img src="public/tick.svg" alt="" />
+                                <img src="public/svgs/tick.svg" alt="" />
                                 <p>Schedule interviews</p>
                             </div>
                             <div className='justify'>
-                                <img src="public/tick.svg" alt="" />
+                                <img src="public/svgs/tick.svg" alt="" />
                                 <p>Schedule interviews</p>
                             </div>
                             <div className='justify'>
-                                <img src="public/tick.svg" alt="" />
+                                <img src="public/svgs/tick.svg" alt="" />
                                 <p>Schedule interviews</p>
                             </div>
                         </div>
                     </div>
                     <div className="card">
-                        <div className='svg'><img src="public/person.svg" alt="" /></div>
+                        <div className='svg'><img src="public/svgs/person.svg" alt="" /></div>
                         <h3>Junior Student</h3>
                         <span>Track placements and learn from senior experiences</span>
                         <div className="functions">
                             <div className='justify'>
-                                <img src="public/tick.svg" alt="" />
+                                <img src="public/svgs/tick.svg" alt="" />
                                 <p>Schedule interviews</p>
                             </div>
                             <div className='justify'>
-                                <img src="public/tick.svg" alt="" />
+                                <img src="public/svgs/tick.svg" alt="" />
                                 <p>Schedule interviews</p>
                             </div>
                             <div className='justify'>
-                                <img src="public/tick.svg" alt="" />
+                                <img src="public/svgs/tick.svg" alt="" />
                                 <p>Schedule interviews</p>
                             </div>
                         </div>
@@ -121,32 +121,32 @@ const Body = () => {
 
                     <div className="cards">
                         <div className="about-card">
-                            <div className='svg'><img src="public/clock.svg" alt="" /></div>
+                            <div className='svg'><img src="public/svgs/clock.svg" alt="" /></div>
                         <h3>Real-Time Updates</h3>
                         <p>Get instant notifications about interview schedules, results, and placement opportunities</p>
                         </div>
                         <div className="about-card">
-                            <div className='svg'><img src="public/person.svg" alt="" /></div>
+                            <div className='svg'><img src="public/svgs/person.svg" alt="" /></div>
                         <h3>Collaborative Platform</h3>
                         <p>Connect coordinators, HRs, and students in one unified ecosystem</p>
                         </div>
                         <div className="about-card">
-                            <div className='svg'><img src="public/tick.svg" alt="" /></div>
+                            <div className='svg'><img src="public/svgs/tick.svg" alt="" /></div>
                         <h3>Analytics Dashboard</h3>
                         <p>Track placement statistics, success rates, and performance metrics</p>
                         </div>
                         <div className="about-card">
-                            <div className='svg'><img src="public/mobile.svg" alt="" /></div>
+                            <div className='svg'><img src="public/svgs/mobile.svg" alt="" /></div>
                         <h3>Mobile Responsive</h3>
                         <p>Access the platform seamlessly across all devices and screen sizes</p>
                         </div>
                         <div className="about-card">
-                            <div className='svg'><img src="public/guard.svg" alt="" /></div>
+                            <div className='svg'><img src="public/svgs/guard.svg" alt="" /></div>
                         <h3>Secure & Private</h3>
                         <p>Enterprise-grade security with DU email authentication and data protection</p>
                         </div>
                         <div className="about-card">
-                            <div className='svg'><img src="public/cap.svg" alt="" /></div>
+                            <div className='svg'><img src="public/svgs/cap.svg" alt="" /></div>
                         <h3>Mentor Network</h3>
                         <p>Connect with seniors for guidance, tips, and interview preparation</p>
                         </div>
