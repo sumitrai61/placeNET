@@ -4,7 +4,8 @@ import './css/utility.css'
 import Navbar from './components/Navbar'
 import Body from './components/body'
 import Footer from './components/Footer'
-import StudentPage from './components/StudentPage'
+import JuniorStudent from './components/JuniorStudent'
+import SeniorStudent from './components/SeniorStudent'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -14,7 +15,8 @@ function App() {
     {/* <Navbar/>
     <Body/>
     <Footer/> */}
-    <StudentPage/>
+    {/* <JuniorStudent/> */}
+    <SeniorStudent/>
     </>
   )
 }

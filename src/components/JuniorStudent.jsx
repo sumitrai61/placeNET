@@ -1,5 +1,5 @@
 import Features from './Features'
-import '../css/StudentPage.css'
+ 
 const StudentPage = () => {
   const myStyle = {
     backgroundColor: '#f0f0f0'
