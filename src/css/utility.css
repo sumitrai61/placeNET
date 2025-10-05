@@ -4,3 +4,12 @@
     align-items: center;
     gap: 5px;
 }
+
+.just-between{
+    display: flex;
+    justify-content: space-between;
+}
+
+.colorGreen{
+    color: rgb(11, 234, 11);
+}

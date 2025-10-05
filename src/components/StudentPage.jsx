@@ -88,7 +88,28 @@ const StudentPage = () => {
             <div><p>Learn from seniors' interview experiences</p></div>
             <div className="exp">
               <div className="exp-items">
-
+                <div id="heading just-between">
+                  <div>
+                    <h4>Amazon</h4>
+                    <div>SDE I</div>
+                  </div>
+                  <div id="star">
+                    <img src="svgs/star.svg" alt="" />
+                    <p>4.5</p>
+                  </div>
+                </div>
+                <div id="package" className='just-between'>
+                    <div><p>Package:</p></div>
+                    <div className='colorGreen'>15.5 LPA</div>
+                </div>
+                <div id="difficulty" className='just-between'>
+                    <div><p>Difficulty:</p></div>
+                    <div className=''>Hard</div>
+                </div>
+                <div className="desc">
+                  Challenging but rewarding experience. Focus on DSA and system design...
+                </div>
+                .
               </div>
             </div>
           </div>
