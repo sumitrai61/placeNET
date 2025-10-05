@@ -109,7 +109,124 @@ const StudentPage = () => {
                 <div className="desc">
                   Challenging but rewarding experience. Focus on DSA and system design...
                 </div>
-                .
+                <div className='provider just-between'>
+                  <div>By Vikash Kumar</div>
+                  <button>Read More</button>
+                </div>
+              </div>
+              <div className="exp-items">
+                <div id="heading just-between">
+                  <div>
+                    <h4>Amazon</h4>
+                    <div>SDE I</div>
+                  </div>
+                  <div id="star">
+                    <img src="svgs/star.svg" alt="" />
+                    <p>4.5</p>
+                  </div>
+                </div>
+                <div id="package" className='just-between'>
+                    <div><p>Package:</p></div>
+                    <div className='colorGreen'>15.5 LPA</div>
+                </div>
+                <div id="difficulty" className='just-between'>
+                    <div><p>Difficulty:</p></div>
+                    <div className=''>Hard</div>
+                </div>
+                <div className="desc">
+                  Challenging but rewarding experience. Focus on DSA and system design...
+                </div>
+                <div className='provider just-between'>
+                  <div>By Vikash Kumar</div>
+                  <button>Read More</button>
+                </div>
+              </div>
+              <div className="exp-items">
+                <div id="heading just-between">
+                  <div>
+                    <h4>Amazon</h4>
+                    <div>SDE I</div>
+                  </div>
+                  <div id="star">
+                    <img src="svgs/star.svg" alt="" />
+                    <p>4.5</p>
+                  </div>
+                </div>
+                <div id="package" className='just-between'>
+                    <div><p>Package:</p></div>
+                    <div className='colorGreen'>15.5 LPA</div>
+                </div>
+                <div id="difficulty" className='just-between'>
+                    <div><p>Difficulty:</p></div>
+                    <div className=''>Hard</div>
+                </div>
+                <div className="desc">
+                  Challenging but rewarding experience. Focus on DSA and system design...
+                </div>
+                <div className='provider just-between'>
+                  <div>By Vikash Kumar</div>
+                  <button>Read More</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="section-3">
+             <h4>Recent Placement Experiences</h4>
+            <div><p>Learn from seniors' interview experiences</p></div>
+            <div className="opportunity">
+              <div className="oppo-items">
+                <div className='just-between'>
+                  <h4>Microsoft</h4>
+                  <div>Premium</div>
+                </div>
+                <div>18.5 LPA</div>
+                <div className='justify'>
+                  <img src="svgs/calender.svg" alt="" />
+                  <div>2025-02-15</div>
+                </div>
+                <div>Difficulty:Hard</div>
+                <div>Required Skills:</div>
+                <div className='justify'>
+                  <div><p>DSA</p></div>
+                  <div><p>System Design</p></div>
+                  <div><p>Azure</p></div>
+                </div>
+              </div>
+              <div className="oppo-items">
+                <div className='just-between'>
+                  <h4>Microsoft</h4>
+                  <div>Premium</div>
+                </div>
+                <div>18.5 LPA</div>
+                <div className='justify'>
+                  <img src="svgs/calender.svg" alt="" />
+                  <div>2025-02-15</div>
+                </div>
+                <div>Difficulty:Hard</div>
+                <div>Required Skills:</div>
+                <div className='justify'>
+                  <div><p>DSA</p></div>
+                  <div><p>System Design</p></div>
+                  <div><p>Azure</p></div>
+                </div>
+              </div>
+              <div className="oppo-items">
+                <div className='just-between'>
+                  <h4>Microsoft</h4>
+                  <div>Premium</div>
+                </div>
+                <div>18.5 LPA</div>
+                <div className='justify'>
+                  <img src="svgs/calender.svg" alt="" />
+                  <div>2025-02-15</div>
+                </div>
+                <div>Difficulty:Hard</div>
+                <div>Required Skills:</div>
+                <div className='justify'>
+                  <div><p>DSA</p></div>
+                  <div><p>System Design</p></div>
+                  <div><p>Azure</p></div>
+                </div>
               </div>
             </div>
           </div>

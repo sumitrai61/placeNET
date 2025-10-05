@@ -39,15 +39,15 @@ const Body = () => {
                         <h3>Placement Coordinator</h3>
                         <span>Manage HR coordination, scheduling, and placement activities</span>
                         <div className="functions">
-                            <div className='justify'>
+                            <div className='justify-center'>
                                 <img src="public/svgs/tick.svg" alt="" />
                                 <p>Schedule interviews</p>
                             </div>
-                            <div className='justify'>
+                            <div className='justify-center'>
                                 <img src="public/svgs/tick.svg" alt="" />
                                 <p>Schedule interviews</p>
                             </div>
-                            <div className='justify'>
+                            <div className='justify-center'>
                                 <img src="public/svgs/tick.svg" alt="" />
                                 <p>Schedule interviews</p>
                             </div>
@@ -58,15 +58,15 @@ const Body = () => {
                         <h3>HR / Hiring Team</h3>
                         <span>Access student profiles and manage recruitment process</span>
                         <div className="functions">
-                            <div className='justify'>
+                            <div className='justify-center'>
                                 <img src="public/svgs/tick.svg" alt="" />
                                 <p>Schedule interviews</p>
                             </div>
-                            <div className='justify'>
+                            <div className='justify-center'>
                                 <img src="public/svgs/tick.svg" alt="" />
                                 <p>Schedule interviews</p>
                             </div>
-                            <div className='justify'>
+                            <div className='justify-center'>
                                 <img src="public/svgs/tick.svg" alt="" />
                                 <p>Schedule interviews</p>
                             </div>
@@ -77,15 +77,15 @@ const Body = () => {
                         <h3>Senior Student</h3>
                         <span>Share experiences and mentor junior students</span>
                         <div className="functions">
-                            <div className='justify'>
+                            <div className='justify-center'>
                                 <img src="public/svgs/tick.svg" alt="" />
                                 <p>Schedule interviews</p>
                             </div>
-                            <div className='justify'>
+                            <div className='justify-center'>
                                 <img src="public/svgs/tick.svg" alt="" />
                                 <p>Schedule interviews</p>
                             </div>
-                            <div className='justify'>
+                            <div className='justify-center'>
                                 <img src="public/svgs/tick.svg" alt="" />
                                 <p>Schedule interviews</p>
                             </div>
@@ -96,15 +96,15 @@ const Body = () => {
                         <h3>Junior Student</h3>
                         <span>Track placements and learn from senior experiences</span>
                         <div className="functions">
-                            <div className='justify'>
+                            <div className='justify-center'>
                                 <img src="public/svgs/tick.svg" alt="" />
                                 <p>Schedule interviews</p>
                             </div>
-                            <div className='justify'>
+                            <div className='justify-center'>
                                 <img src="public/svgs/tick.svg" alt="" />
                                 <p>Schedule interviews</p>
                             </div>
-                            <div className='justify'>
+                            <div className='justify-center'>
                                 <img src="public/svgs/tick.svg" alt="" />
                                 <p>Schedule interviews</p>
                             </div>

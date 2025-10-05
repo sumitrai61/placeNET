@@ -1,7 +1,12 @@
-.justify{
+.justify-center{
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 5px;
+}
+
+.justify{
+    display: flex;
     gap: 5px;
 }
 
