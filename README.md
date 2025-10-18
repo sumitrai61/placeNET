@@ -45,8 +45,8 @@ This project aims to:
 
 ## 🛠️ Tech Stack (suggested)
 - **Frontend** – HTML, CSS, Bootstrap  
-- **Backend** – PHP  
-- **Database** – MySQL  
+- **Backend** – Django  
+- **Database** – PostgreSQL 
 
 ---
 
