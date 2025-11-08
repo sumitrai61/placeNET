@@ -10,6 +10,23 @@
     gap: 5px;
 }
 
+.font14{
+    font-size: 14px;
+    color: rgb(115, 114, 114);
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.green-text{
+    color: oklch(.627 .194 149.214);
+}
+
+.med-color{
+    color: oklch(.681 .162 75.834);
+}
+
 .just-between{
     display: flex;
     justify-content: space-between;

@@ -18,7 +18,7 @@
 .stats-item{
     display: flex;
     gap: 20px;
-    border: 2px solid black;
+    border: 2px solid rgb(115, 114, 114);
     padding: 25px 40px;
     border-radius: 10px;
 }
@@ -43,7 +43,7 @@
 }
 
 .live-updates{
-    border: 2px solid black;
+    border: 2px solid rgb(115, 114, 114);
     width: 32%;
     margin-top:20px;
     padding: 10px;
@@ -58,7 +58,7 @@
 }
 
 .placement-stats{
-    border: 2px solid black;
+    border: 2px solid rgb(115, 114, 114);
 }
 
 .section-1{
@@ -74,7 +74,7 @@
     height: 50vh;
 }
 .section-2{
-    border: 2px solid black;
+    border: 2px solid rgb(115, 114, 114);
     border-radius: 10px;
     margin-top: 20px;
     padding: 20px;
@@ -103,7 +103,7 @@
 }
 
 .section-3{
-    border: 2px solid black;
+    border: 2px solid rgb(115, 114, 114);
     border-radius: 10px;
     margin-top: 20px;
     padding: 20px;
@@ -115,7 +115,7 @@
 }
 
 .oppo-items{
-    border: 2px solid black;
+    border: 2px solid rgb(115, 114, 114);
     border-radius: 10px;
     width: 33%;
     padding: 10px;
