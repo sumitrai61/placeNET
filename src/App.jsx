@@ -15,8 +15,8 @@ function App() {
     {/* <Navbar/>
     <Body/>
     <Footer/> */}
-    {/* <JuniorStudent/> */}
-    <SeniorStudent/>
+    <JuniorStudent/>
+    {/* <SeniorStudent/> */}
     </>
   )
 }

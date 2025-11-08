@@ -1,45 +1,45 @@
 .main1{
     display: flex; 
 }
-.right{
+.right_Sen{
     padding: 15px 20px;
     position: absolute;
     right: 5px;
     margin-left: 200px;
 }
 
-.statistics{
+.statistics_Sen{
     margin-top: 20px;
     display: flex;
     justify-content: start;
     gap: 30px;
 }
 
-.stats-item{
+.stats-item_Sen{
     display: flex;
     gap: 20px;
     border: 2px solid rgb(115, 114, 114);
     padding: 22px 178px 22px 20px;
     border-radius: 10px;
 }
-.stats-item p{
+.stats-item_Sen p{
     font-size: 11px;
 }
-.stats-item h4{
+.stats-item_Sen h4{
     font-size: 13px;
     color: rgb(115, 114, 114);
 }
 
-.stats-item span{
+.stats-item_Sen span{
     font-weight: bolder;
     font-size: 20px;
 }
 
-.stats-item img{
+.stats-item_Sen img{
     width: 35px;
 }
 
-.section-1{
+.section-1_Sen{
     display: flex;
     gap: 30px;
 }

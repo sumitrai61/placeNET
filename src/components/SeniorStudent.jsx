@@ -5,25 +5,25 @@ const SeniorStudent = () => {
     <>
       <div className="main1">
         <Features />
-        <div className="right">
+        <div className="right_Sen">
           <h1>Senior Student Dashboard</h1>
           <p>Share your placement experiences and help juniors</p>
-          <div className="statistics">
-            <div className="stats-item">
+          <div className="statistics_Sen">
+            <div className="stats-item_Sen">
               <img src="svgs/placement.svg" alt="" />
               <div>
                 <div><h4>Active Companies</h4></div>
                 <div><span>3</span></div>
               </div>
             </div>
-            <div className="stats-item">
+            <div className="stats-item_Sen">
               <img src="svgs/two-person.svg" alt="" />
               <div>
                 <div><h4>Students Placed</h4></div>
                 <div><span>89</span></div>
               </div>
             </div>
-            <div className="stats-item">
+            <div className="stats-item_Sen">
               <img src="svgs/calender.svg" alt="" />
               <div>
                 <div><h4>Upcoming Drives</h4></div>
@@ -32,7 +32,7 @@ const SeniorStudent = () => {
             </div>
           </div>
 
-          <div className="section-1">
+          <div className="section-1_Sen">
             <div className="company-updates">
               <h4>Company Updates</h4>
               <p>Latest placement opportunities and requirements</p>
