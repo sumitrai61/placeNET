@@ -179,7 +179,7 @@ const StudentPage = () => {
                   <h4>Microsoft</h4>
                   <div>Premium</div>
                 </div>
-                <div>18.5 LPA</div>
+                <div className='green-text bold'>18.5 LPA</div>
                 <div className='justify'>
                   <img src="svgs/calender.svg" alt="" />
                   <div>2025-02-15</div>
@@ -197,7 +197,7 @@ const StudentPage = () => {
                   <h4>Microsoft</h4>
                   <div>Premium</div>
                 </div>
-                <div>18.5 LPA</div>
+                <div className='green-text bold'>18.5 LPA</div>
                 <div className='justify'>
                   <img src="svgs/calender.svg" alt="" />
                   <div>2025-02-15</div>
@@ -215,7 +215,7 @@ const StudentPage = () => {
                   <h4>Microsoft</h4>
                   <div>Premium</div>
                 </div>
-                <div>18.5 LPA</div>
+                <div className='green-text bold'>18.5 LPA</div>
                 <div className='justify'>
                   <img src="svgs/calender.svg" alt="" />
                   <div>2025-02-15</div>
