@@ -57,6 +57,13 @@
     margin: 20px;
 }
 
+.place-btn{
+    border-radius: 10px;
+    border: 1px solid rgb(115, 114, 114);
+    padding: 2px 5px;
+    margin-top: 5px;
+}
+
 .placement-stats{
     border: 2px solid rgb(115, 114, 114);
 }
@@ -64,6 +71,10 @@
 .section-1{
     display: flex;
     gap: 20px;
+}
+
+#heading{
+    display: flex;
 }
 
 .placement-stats{
