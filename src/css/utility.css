@@ -1,0 +1,40 @@
+.justify-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.justify{
+    display: flex;
+    gap: 5px;
+}
+
+.font14{
+    font-size: 14px;
+    color: rgb(115, 114, 114);
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.green-text{
+    color: oklch(.627 .194 149.214);
+}
+
+.med-color{
+    color: oklch(.681 .162 75.834);
+}
+.hard-color{
+    color: oklch(.444 .177 26.899);
+    font-size: 12px;
+    background-color: oklch(0.94 0.03 17.75);
+    padding: 1px 10px;
+    border-radius: 12px;
+}
+
+.just-between{
+    display: flex;
+    justify-content: space-between;
+}
