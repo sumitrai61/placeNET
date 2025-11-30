@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<canvas id="myChart"></canvas>
+
+<script>
+const ctx = document.getElementById("myChart");
+
+new Chart(ctx, {
+  type: 'line',  
+  data: {
+    labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May'],
+    datasets: [{
+      label: 'Sales',
+      data: [10, 30, 20, 40, 35],
+      borderWidth: 2,
+      borderColor: "blue"
+    }]
+  }
+});
+</script>
+
+</body>
+</html>

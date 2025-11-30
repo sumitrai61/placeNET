@@ -1,0 +1,136 @@
+.main1{
+    display: flex; 
+}
+.right{
+    padding: 15px 20px;
+    position: absolute;
+    right: 50px;
+    margin-left: 320px;
+}
+
+.statistics{
+    margin-top: 20px;
+    display: flex;
+    justify-content: start;
+    gap: 40px;
+}
+
+.stats-item{
+    display: flex;
+    gap: 20px;
+    border: 2px solid rgb(115, 114, 114);
+    padding: 15px 35px;
+    border-radius: 10px;
+}
+.stats-item p{
+    font-size: 11px;
+}
+.stats-item h4{
+    font-size: 13px;
+    color: rgb(115, 114, 114);
+}
+
+.stats-item span{
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+#circle{
+    background-color: rgb(37 99 235);
+    height: 10px;
+    width: 10px;
+    border-radius: 40px;
+}
+
+.live-updates{
+    border: 2px solid rgb(115, 114, 114);
+    width: 32%;
+    margin-top:20px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.live-updates-items{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 20px;
+}
+
+.place-btn{
+    border-radius: 10px;
+    border: 1px solid rgb(115, 114, 114);
+    padding: 2px 5px;
+    margin-top: 5px;
+}
+
+.placement-stats{
+    border: 2px solid rgb(115, 114, 114);
+    background-color: white;
+}
+
+.section-1{
+    display: flex;
+    gap: 20px;
+}
+
+#heading{
+    display: flex;
+}
+
+.placement-stats{
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 60%;
+    padding: 10px;
+    height: 50vh;
+}
+.section-2{
+    border: 2px solid rgb(115, 114, 114);
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.exp{
+    display: flex;
+    gap: 20px;
+}
+
+.exp-items{
+    border: 2px solid grey;
+    border-radius: 10px;
+    width: 33%;
+    padding: 10px;
+    margin-top: 25px;
+}
+
+#star{
+    display: flex;
+    align-items: center;
+}
+
+.provider button{
+    cursor: pointer;
+}
+
+.section-3{
+    border: 2px solid rgb(115, 114, 114);
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.opportunity{
+    display: flex;
+    gap: 20px;
+}
+
+.oppo-items{
+    border: 2px solid rgb(115, 114, 114);
+    border-radius: 10px;
+    width: 33%;
+    padding: 10px;
+    margin-top: 25px;
+}

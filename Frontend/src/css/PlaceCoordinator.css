@@ -1,0 +1,93 @@
+body {
+    background-color: #f9fafb;
+}
+
+.right {
+    padding: 15px 20px;
+    position: absolute;
+    right: 85px;
+    margin-left: 320px;
+}
+
+.stats-item {
+    background-color: white;
+    border: 1px solid rgb(115, 114, 114);
+}
+
+.up-placements {
+    border-radius: 10px;
+    border: 1px solid rgb(115, 114, 114);
+    padding: 20px;
+    margin: 20px 0;
+    background-color: white;
+    width: 32vw;
+}
+
+.up-place-items{
+    border-radius: 10px;
+    border: 1px solid rgb(115, 114, 114);
+    padding: 10px;
+}
+
+.up-place-items{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+.status{
+    text-align: center;
+}
+.parcipants{
+    color: grey;
+    font-size: 13px;
+}
+
+.recent-activity{
+    border-radius: 10px;
+    border: 1px solid rgb(115, 114, 114);   
+    width: 30vw;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: white;
+}
+
+.item-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recent-activity-items{
+    margin: 20px 10px;    
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.time{
+    font-size: 12px;
+    color: rgb(115, 114, 114);
+}
+
+.activity-info{
+    font-size: 14px;
+}
+
+.red{
+    background-color: red;
+    height: 8px;
+    width: 8px;
+    border-radius: 4px;
+}
+.yellow{
+    background-color: rgb(138, 138, 70);
+    height: 8px;
+    width: 8px;
+    border-radius: 4px;
+}
+.green{
+    background-color: green;
+    height: 8px;
+    width: 8px;
+    border-radius: 4px;
+}
