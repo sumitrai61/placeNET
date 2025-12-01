@@ -47,4 +47,67 @@
     line-height: 1.5;
 }
 
+/* ==================== RESPONSIVE STYLES ==================== */
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .about-page h1 {
+        font-size: 42px;
+    }
+    
+    .about-subtitle {
+        font-size: 18px;
+    }
+    
+    .about-grid {
+        gap: 20px;
+    }
+    
+    .about-highlight {
+        max-width: 320px;
+        padding: 20px;
+    }
+    
+    .about-highlight h2 {
+        font-size: 22px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .about-page {
+        padding: 20px;
+        min-height: auto;
+    }
+    
+    .about-page h1 {
+        font-size: 28px;
+        margin-bottom: 12px;
+    }
+    
+    .about-subtitle {
+        font-size: 16px;
+        margin-bottom: 24px;
+    }
+    
+    .about-grid {
+        flex-direction: column;
+        gap: 16px;
+        width: 100%;
+    }
+    
+    .about-highlight {
+        max-width: 100%;
+        padding: 18px;
+    }
+    
+    .about-highlight h2 {
+        font-size: 20px;
+    }
+    
+    .about-highlight p {
+        font-size: 14px;
+    }
+}
+
 

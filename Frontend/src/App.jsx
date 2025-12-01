@@ -9,6 +9,8 @@ import Contact from './components/Contact'
 import JuniorStudent from './components/JuniorStudent'
 import SeniorStudent from './components/SeniorStudent'
 import PlaceCoordinator from './components/PlaceCoordinator'
+import Liveplacements from './components/LivePlacements'
+import Experiences from './components/Experiences'
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
         <Route path="/junior" element={<JuniorStudent />} />
         <Route path="/senior" element={<SeniorStudent />} />
         <Route path="/pc" element={<PlaceCoordinator />} />
+        <Route path="/live" element={<Liveplacements />} />
+        <Route path="/experiences" element={<Experiences />} />
       </Routes>
       
     </>

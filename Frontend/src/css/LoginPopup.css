@@ -134,3 +134,44 @@
   .actions .submit-btn:hover {
     background: #1d4ed8; /* darker blue on hover */
   }
+
+/* ==================== RESPONSIVE STYLES ==================== */
+
+/* Mobile */
+@media (max-width: 768px) {
+    .login-modal {
+        max-width: 90%;
+        padding: 20px;
+        margin: 20px;
+    }
+    
+    .login-modal h2 {
+        font-size: 20px;
+    }
+    
+    .login-cap-icon {
+        width: 28px;
+        height: 28px;
+    }
+    
+    .login-subtitle {
+        font-size: 12px;
+    }
+    
+    .form-group label {
+        font-size: 13px;
+    }
+    
+    .form-group input {
+        font-size: 13px;
+        padding: 8px;
+    }
+    
+    .actions {
+        flex-direction: column;
+    }
+    
+    .actions button {
+        width: 100%;
+    }
+}

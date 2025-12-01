@@ -3,7 +3,14 @@
     padding: 15px 20px;
     position: absolute;
     right: 0px;
-    width: 77.1vw;
+    width: 76.3vw;
+}
+
+.live-place-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: rgb(37, 99, 235);
 }
 
 .live-placements-container{
@@ -13,18 +20,128 @@
 }
 
 .live-place-items{
-    padding: 10px 15px;
+    padding: 15px 20px;
     border: 2px solid rgb(115, 114, 114);
     margin: 10px;
     border-radius: 10px;
-    
+    background-color: #fafafa;
 }
 
 .info-1{
     gap: 25px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
+
+.info-1 p {
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(115, 114, 114);
+    margin: 0;
+}
+
+.role {
+    font-size: 16px;
+    font-weight: bold;
+    color: #1a1a1a;
+}
+
 .info-2{
     gap: 25px;
-    margin-bottom: 4px;
+    margin-bottom: 8px;
+}
+
+.package {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.student-place {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.student-place strong {
+    font-weight: bold;
+    color: #1a1a1a;
+}
+
+.comp-visited {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.comp-visited strong {
+    font-weight: bold;
+    color: #1a1a1a;
+}
+
+.placed-on {
+    font-size: 13px;
+    font-weight: 500;
+    color: rgb(115, 114, 114);
+    margin-top: 8px;
+    padding-top: 8px;
+    border-top: 1px solid rgb(229, 229, 229);
+}
+
+/* ==================== RESPONSIVE STYLES ==================== */
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .live-place {
+        width: 75vw;
+        padding: 15px;
+    }
+    
+    .live-place-items {
+        padding: 12px 15px;
+    }
+    
+    .info-1, .info-2 {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .live-place {
+        position: relative;
+        width: 100%;
+        right: 0;
+        padding: 15px 10px;
+    }
+    
+    .live-place-heading {
+        font-size: 20px;
+    }
+    
+    .live-placements-container {
+        padding: 10px 5px;
+    }
+    
+    .live-place-items {
+        margin: 10px 5px;
+        padding: 12px;
+    }
+    
+    .info-1 {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .info-2 {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+    
+    .package, .student-place, .comp-visited {
+        font-size: 13px;
+    }
+    
+    .placed-on {
+        font-size: 12px;
+    }
 }

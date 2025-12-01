@@ -75,35 +75,50 @@
     display: flex;
 }
 
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
 .placement-stats{
     border: 2px solid rgb(115, 114, 114);
     background-color: white;
     border-radius: 10px;
     margin-top: 20px;
     width: 60%;
-    padding: 10px;
+    padding: 15px;
     height: 50vh;
-}
-.placement-line-wrapper {
-    margin-top: 10px;
-    width: 100%;
-    height: calc(100% - 60px); /* keep overall box size the same */
+    display: flex;
+    flex-direction: column;
 }
 
-.placement-line-chart {
+.placement-stats h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #1a1a1a;
+}
+
+.placement-stats p {
+    font-size: 13px;
+    color: rgb(115, 114, 114);
+    margin-bottom: 15px;
+}
+
+.placement-chart-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.placement-chart-svg {
     width: 100%;
     height: 100%;
-}
-
-.placement-month-label {
-    font-size: 11px;
-    fill: #6b7280;
-}
-
-.placement-note {
-    margin-top: 8px;
-    font-size: 11px;
-    color: grey;
+    max-height: 100%;
 }
 .section-2{
     border: 2px solid rgb(115, 114, 114);
@@ -152,4 +167,175 @@
     width: 33%;
     padding: 10px;
     margin-top: 25px;
+}
+
+/* ==================== RESPONSIVE STYLES ==================== */
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .main1 {
+        flex-direction: column;
+    }
+    
+    .right {
+        position: relative;
+        margin-left: 0;
+        right: 0;
+        width: 100%;
+        padding: 15px;
+    }
+    
+    .desktop-logout {
+        display: none;
+    }
+    
+    .statistics {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+    .stats-item {
+        flex: 1 1 calc(50% - 10px);
+        min-width: 200px;
+    }
+    
+    .section-1 {
+        flex-direction: column;
+    }
+    
+    .live-updates {
+        width: 100%;
+    }
+    
+    .placement-stats {
+        width: 100%;
+        height: 400px;
+    }
+    
+    .exp {
+        flex-wrap: wrap;
+    }
+    
+    .exp-items {
+        width: calc(50% - 10px);
+        min-width: 250px;
+    }
+    
+    .opportunity {
+        flex-wrap: wrap;
+    }
+    
+    .oppo-items {
+        width: calc(50% - 10px);
+        min-width: 250px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .main1 {
+        flex-direction: column;
+    }
+    
+    .right {
+        position: relative;
+        margin-left: 0;
+        right: 0;
+        width: 100%;
+        padding: 15px 10px;
+    }
+    
+    .right h1 {
+        font-size: 20px;
+    }
+    
+    .desktop-logout {
+        display: none;
+    }
+    
+    #heading {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    #heading button {
+        width: 100%;
+        max-width: 150px;
+    }
+    
+    .right p {
+        font-size: 14px;
+    }
+    
+    .statistics {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .stats-item {
+        width: 100%;
+        padding: 12px 20px;
+    }
+    
+    .stats-item span {
+        font-size: 18px;
+    }
+    
+    .section-1 {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .live-updates {
+        width: 100%;
+        margin-top: 15px;
+    }
+    
+    .live-updates-items {
+        margin: 15px 10px;
+        gap: 15px;
+    }
+    
+    .placement-stats {
+        width: 100%;
+        height: 350px;
+        padding: 10px;
+    }
+    
+    .placement-stats h4 {
+        font-size: 16px;
+    }
+    
+    .placement-chart-container {
+        min-height: 250px;
+    }
+    
+    .section-2 {
+        padding: 15px;
+    }
+    
+    .exp {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .exp-items {
+        width: 100%;
+        margin-top: 0;
+    }
+    
+    .section-3 {
+        padding: 15px;
+    }
+    
+    .opportunity {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .oppo-items {
+        width: 100%;
+        margin-top: 0;
+    }
 }

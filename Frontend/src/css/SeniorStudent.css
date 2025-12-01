@@ -141,3 +141,145 @@ p{
     color: rgb(115, 114, 114);
 }
 
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* ==================== RESPONSIVE STYLES ==================== */
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .main1 {
+        flex-direction: column;
+    }
+    
+    .right_Sen {
+        position: relative;
+        margin-left: 0;
+        right: 0;
+        width: 100%;
+        padding: 15px;
+    }
+    
+    .desktop-logout {
+        display: none;
+    }
+    
+    .statistics_Sen {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+    .stats-item_Sen {
+        flex: 1 1 calc(50% - 10px);
+        min-width: 200px;
+        padding: 20px 15px;
+    }
+    
+    .section-1_Sen {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .company-updates {
+        width: 100%;
+    }
+    
+    .high-val-placement-section {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .main1 {
+        flex-direction: column;
+    }
+    
+    .right_Sen {
+        position: relative;
+        margin-left: 0;
+        right: 0;
+        width: 100%;
+        padding: 15px 10px;
+    }
+    
+    .right_Sen h1 {
+        font-size: 20px;
+    }
+    
+    .desktop-logout {
+        display: none;
+    }
+    
+    #heading {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    #heading button {
+        width: 100%;
+        max-width: 150px;
+    }
+    
+    .right_Sen p {
+        font-size: 14px;
+    }
+    
+    .statistics_Sen {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .stats-item_Sen {
+        width: 100%;
+        padding: 15px 20px;
+    }
+    
+    .stats-item_Sen span {
+        font-size: 18px;
+    }
+    
+    .section-1_Sen {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .company-updates {
+        width: 100%;
+        padding: 15px;
+    }
+    
+    .company-updates-items {
+        height: auto;
+        min-height: 150px;
+        padding: 12px;
+    }
+    
+    .details {
+        flex-wrap: wrap;
+        gap: 15px !important;
+    }
+    
+    .requirements {
+        flex-wrap: wrap;
+    }
+    
+    .high-val-placement-section {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+    }
+    
+    .section-items {
+        height: auto;
+        min-height: 80px;
+        padding: 12px;
+    }
+}
+

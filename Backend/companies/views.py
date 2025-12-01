@@ -1,8 +1,6 @@
-from rest_framework import generics
-from rest_framework.permissions import IsAuthenticated
+from rest_framework import generics, permissions
 from .models import Company, PlacementDrive
 from .serializers import CompanySerializer, PlacementDriveSerializer
-from .permissions import ReadOnlyOrPC, IsPC
 
 
 # ===================== COMPANY LIST + CRUD =====================
@@ -10,13 +8,13 @@ from .permissions import ReadOnlyOrPC, IsPC
 class CompanyListCreateView(generics.ListCreateAPIView):
     queryset = Company.objects.all().order_by("-created_at")
     serializer_class = CompanySerializer
-    permission_classes = [ReadOnlyOrPC]
+    permission_classes = [permissions.AllowAny]
 
 
 class CompanyDetailView(generics.RetrieveUpdateDestroyAPIView):
     queryset = Company.objects.all()
     serializer_class = CompanySerializer
-    permission_classes = [ReadOnlyOrPC]
+    permission_classes = [permissions.AllowAny]
 
 
 # ===================== PLACEMENT DRIVES (Only PC Can Create) =====================
@@ -24,13 +22,13 @@ class CompanyDetailView(generics.RetrieveUpdateDestroyAPIView):
 class PlacementDriveListCreateView(generics.ListCreateAPIView):
     queryset = PlacementDrive.objects.all().order_by("-date")
     serializer_class = PlacementDriveSerializer
-    permission_classes = [ReadOnlyOrPC]
+    permission_classes = [permissions.AllowAny]
 
 
 class PlacementDriveDetailView(generics.RetrieveUpdateDestroyAPIView):
     queryset = PlacementDrive.objects.all()
     serializer_class = PlacementDriveSerializer
-    permission_classes = [ReadOnlyOrPC]
+    permission_classes = [permissions.AllowAny]
 
 
 

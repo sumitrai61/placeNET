@@ -3,13 +3,12 @@ from django.shortcuts import render
 # Create your views here.
 from rest_framework.views import APIView
 from rest_framework.response import Response
-from rest_framework.permissions import IsAuthenticated
-from .permissions import IsHR
+from rest_framework import permissions
 from accounts.models import Student
 from companies.models import Company, PlacementDrive
 
 class HRDashboardView(APIView):
-    permission_classes = [IsAuthenticated, IsHR]
+    permission_classes = [permissions.AllowAny]
 
     def get(self, request):
         eligible_students = Student.objects.filter(cgpa__gte=8.0).count()
@@ -35,7 +34,7 @@ class HRDashboardView(APIView):
 
 
 class StudentFilterView(APIView):
-    permission_classes = [IsAuthenticated, IsHR]
+    permission_classes = [permissions.AllowAny]
 
     def get(self, request):
         cgpa_min = float(request.GET.get("cgpa", 0))

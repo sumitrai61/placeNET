@@ -46,3 +46,16 @@
 .white{
     color: white;
 }
+
+/* ==================== RESPONSIVE UTILITIES ==================== */
+
+@media (max-width: 768px) {
+    .justify-between {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+    .justify-center {
+        flex-wrap: wrap;
+    }
+}

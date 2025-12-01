@@ -3,16 +3,11 @@ from juniors.serializers import LivePlacementSerializer
 
 from rest_framework.views import APIView
 from rest_framework.response import Response
-from rest_framework.permissions import IsAuthenticated
+from rest_framework import status, permissions
 from accounts.models import Student
 from companies.models import Company, PlacementDrive
 from seniors.models import Experience
-from .permissions import IsPC
-from rest_framework import status
-
 from companies.serializers import PlacementDriveSerializer
-
-from rest_framework import permissions
 from .models import LivePlacement
 
 
@@ -20,7 +15,7 @@ from .models import LivePlacement
 
 
 class PCDashboardView(APIView):
-    permission_classes = [IsAuthenticated, IsPC]
+    permission_classes = [permissions.AllowAny]
 
     def get(self, request):
         total_students = Student.objects.count()
@@ -57,7 +52,7 @@ class PCDashboardView(APIView):
 
 
 class PCStudentsView(APIView):
-    permission_classes = [IsAuthenticated, IsPC]
+    permission_classes = [permissions.AllowAny]
 
     def get(self, request):
         students = Student.objects.all().order_by("-cgpa")
@@ -80,10 +75,9 @@ class PCStudentsView(APIView):
 
 class PCLivePlacementsView(APIView):
     """
-    Only PC can create / view live placements.
-    Juniors isko /api/placements/ se dekhenge.
+    Live placements endpoint is now publicly accessible (no auth enforced).
     """
-    permission_classes = [IsAuthenticated, IsPC]
+    permission_classes = [permissions.AllowAny]
 
     def get(self, request):
         placements = LivePlacement.objects.order_by("-created_at")[:50]
@@ -104,7 +98,7 @@ class PCLivePlacementsView(APIView):
 # ================================================================#
 
 class PlacementDriveView(APIView):
-    permission_classes = [IsAuthenticated, IsPC]
+    permission_classes = [permissions.AllowAny]
 
     # GET → list all drives
     def get(self, request):
@@ -120,7 +114,7 @@ class PlacementDriveView(APIView):
         return Response(serializer.errors, status=400)
 
 class PlacementDriveUpdateDeleteView(APIView):
-    permission_classes = [IsAuthenticated, IsPC]
+    permission_classes = [permissions.AllowAny]
 
     # PUT → update
     def put(self, request, id):
@@ -150,11 +144,7 @@ class PlacementDriveUpdateDeleteView(APIView):
 
 
 class LivePlacementCRUD(APIView):
-
-    def get_permissions(self):
-        if self.request.method in ["POST", "PUT", "DELETE"]:
-            return [IsPC()]
-        return [permissions.IsAuthenticated()]
+    permission_classes = [permissions.AllowAny]
 
     def get(self, request):
         qs = LivePlacement.objects.all().order_by("-placed_at")

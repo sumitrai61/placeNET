@@ -2,11 +2,29 @@ body {
     background-color: #f9fafb;
 }
 
+.main1 {
+    display: flex;
+}
+
 .right {
     padding: 15px 20px;
     position: absolute;
     right: 85px;
     margin-left: 320px;
+}
+
+.statistics {
+    margin-top: 20px;
+    display: flex;
+    justify-content: start;
+    gap: 40px;
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
 }
 
 .stats-item {
@@ -90,4 +108,115 @@ body {
     height: 8px;
     width: 8px;
     border-radius: 4px;
+}
+
+/* ==================== RESPONSIVE STYLES ==================== */
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .main1 {
+        flex-direction: column;
+    }
+    
+    .right {
+        position: relative;
+        margin-left: 0;
+        right: 0;
+        width: 100%;
+        padding: 15px;
+    }
+    
+    .desktop-logout {
+        display: none;
+    }
+    
+    .statistics {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+    .stats-item {
+        flex: 1 1 calc(50% - 10px);
+        min-width: 200px;
+    }
+    
+    .section-1 {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .up-placements {
+        width: 100%;
+    }
+    
+    .recent-activity {
+        width: 100%;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .right {
+        position: relative;
+        margin-left: 0;
+        right: 0;
+        width: 100%;
+        padding: 15px 10px;
+    }
+    
+    .right h2 {
+        font-size: 20px;
+    }
+    
+    .desktop-logout {
+        display: none;
+    }
+    
+    #heading {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    #heading button {
+        width: 100%;
+        max-width: 150px;
+    }
+    
+    .right p {
+        font-size: 14px;
+    }
+    
+    .statistics {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .stats-item {
+        width: 100%;
+    }
+    
+    .section-1 {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .up-placements {
+        width: 100%;
+        padding: 15px;
+    }
+    
+    .up-place-items {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .recent-activity {
+        width: 100%;
+        padding: 15px;
+    }
+    
+    .recent-activity-items {
+        margin: 15px 5px;
+    }
 }

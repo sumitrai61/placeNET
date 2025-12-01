@@ -7,9 +7,52 @@
 
 .heading{
     padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
+.heading-content {
+    flex: 1;
+}
+
 .heading h1{
     color: rgb(37 99 235);
+}
+
+/* Hamburger Button - Hidden on desktop */
+.hamburger-btn {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 10;
+}
+
+.hamburger-line {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(37 99 235);
+    border-radius: 3px;
+    transition: all 0.3s ease;
+    transform-origin: center;
+}
+
+.hamburger-line.open:nth-child(1) {
+    transform: rotate(45deg) translate(8px, 8px);
+}
+
+.hamburger-line.open:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-line.open:nth-child(3) {
+    transform: rotate(-45deg) translate(8px, -8px);
 }
 .function{
     display: flex;
@@ -35,6 +78,8 @@ img{
     transition: all 0.2s;
     padding: 10px;
     border-radius: 6px;
+    text-decoration: none;
+    color: inherit;
 }
 
 .func-item:hover{
@@ -48,12 +93,13 @@ img{
 }
 
 .feature-bottom{
-    height: 12vh;
+    height: auto;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    
+    padding: 10px;
+    gap: 10px;
 }
 .user{
     display: flex;
@@ -78,5 +124,155 @@ img{
 }
 #arrow{
     margin-left: 30px;
+}
+
+.logout-btn {
+    display: none;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: rgb(37 99 235);
+    color: white;
+    border: 1px solid rgb(37 99 235);
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.logout-btn:hover {
+    background-color: rgb(128, 160, 230);
+    border-color: black;
+}
+
+/* ==================== RESPONSIVE STYLES ==================== */
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .main {
+        width: 100vw;
+        max-width: 100%;
+        position: relative;
+        height: auto;
+        border: none;
+        border-bottom: 2px solid rgb(115, 114, 114);
+        z-index: 100;
+        margin: 0;
+        padding: 0;
+        left: 0;
+        right: 0;
+        box-sizing: border-box;
+    }
+    
+    .hamburger-btn {
+        display: flex;
+    }
+    
+    .menu-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+    }
+    
+    .menu-content.menu-open {
+        max-height: 1000px;
+        transition: max-height 0.3s ease-in;
+    }
+    
+    .function {
+        height: auto;
+        min-height: auto;
+    }
+    
+    .feature-bottom {
+        height: auto;
+        padding: 10px 0;
+    }
+    
+    .logout-btn {
+        display: block;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .main {
+        width: 100vw;
+        max-width: 100%;
+        position: relative;
+        height: auto;
+        border: none;
+        border-bottom: 2px solid rgb(115, 114, 114);
+        z-index: 100;
+        margin: 0;
+        padding: 0;
+        left: 0;
+        right: 0;
+        box-sizing: border-box;
+    }
+    
+    .hamburger-btn {
+        display: flex;
+    }
+    
+    .menu-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+    }
+    
+    .menu-content.menu-open {
+        max-height: 1000px;
+        transition: max-height 0.3s ease-in;
+    }
+    
+    .heading {
+        padding: 10px 15px;
+    }
+    
+    .heading h1 {
+        font-size: 18px;
+    }
+    
+    .heading p {
+        font-size: 12px;
+    }
+    
+    .function {
+        height: auto;
+        padding: 10px;
+    }
+    
+    .func-item {
+        font-size: 13px;
+        padding: 8px;
+    }
+    
+    .feature-bottom {
+        height: auto;
+        padding: 15px 10px;
+    }
+    
+    .user {
+        padding: 10px 20px;
+        flex-wrap: wrap;
+    }
+    
+    #arrow {
+        margin-left: 10px;
+    }
+    
+    #name {
+        font-size: 14px;
+    }
+    
+    #role {
+        font-size: 12px;
+    }
+    
+    .logout-btn {
+        display: block;
+    }
 }
 

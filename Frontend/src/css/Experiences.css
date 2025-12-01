@@ -33,3 +33,54 @@
     align-items: center;
     margin-bottom: 10px;
 }
+
+/* ==================== RESPONSIVE STYLES ==================== */
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .experiences {
+        width: 75vw;
+        padding: 15px;
+    }
+    
+    .experience-container {
+        padding: 15px;
+    }
+    
+    .experience-items {
+        padding: 12px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .experiences {
+        position: relative;
+        width: 100%;
+        right: 0;
+        padding: 15px 10px;
+    }
+    
+    .live-place-heading {
+        font-size: 20px;
+    }
+    
+    .experience-container {
+        padding: 12px;
+        margin-bottom: 15px;
+    }
+    
+    .experience-items {
+        padding: 10px;
+    }
+    
+    .company {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+    .org {
+        font-size: 11px;
+        padding: 4px 8px;
+    }
+}

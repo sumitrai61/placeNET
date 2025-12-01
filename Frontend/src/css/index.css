@@ -322,3 +322,156 @@ nav {
     gap: 10px;
     color: white;
 }
+
+/* ==================== RESPONSIVE STYLES ==================== */
+
+/* Tablet and below */
+@media (max-width: 1024px) {
+    .nav {
+        flex-wrap: wrap;
+        gap: 15px;
+        padding: 8px;
+    }
+    
+    .nav-right {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    
+    .nav-right a {
+        font-size: 14px;
+    }
+    
+    #info h1 {
+        font-size: 50px;
+    }
+    
+    #info span {
+        font-size: 20px;
+    }
+    
+    .stats {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    
+    .card {
+        width: 25vw;
+        min-width: 200px;
+    }
+    
+    .footer {
+        flex-direction: column;
+        gap: 30px;
+        height: auto;
+        padding: 30px 20px;
+        position: relative;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+    }
+    
+    .nav-left {
+        font-size: 16px;
+    }
+    
+    .nav-right {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    
+    .nav-right a {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+    
+    .nav-right button {
+        width: 100%;
+        max-width: 200px;
+        margin: 5px 0;
+    }
+    
+    #info h1 {
+        font-size: 32px;
+    }
+    
+    #info span {
+        font-size: 16px;
+    }
+    
+    #stats {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .stats {
+        flex-direction: column;
+        gap: 20px;
+        margin: 20px 10px;
+    }
+    
+    .card {
+        width: 80%;
+        max-width: 300px;
+        margin: 10px 0;
+    }
+    
+    .card:hover {
+        width: 82%;
+    }
+    
+    #heading h1 {
+        font-size: 32px;
+    }
+    
+    #heading span {
+        font-size: 16px;
+    }
+    
+    .about-card {
+        width: 80%;
+        max-width: 300px;
+        margin: 10px 0;
+    }
+    
+    .about-card:hover {
+        width: 82%;
+    }
+    
+    .place-stats {
+        padding: 20px;
+        height: auto;
+    }
+    
+    .place-stats .first {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .first h1 {
+        font-size: 32px;
+    }
+    
+    .first span {
+        font-size: 16px;
+    }
+    
+    .footer {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .container {
+        background-size: cover;
+    }
+}
