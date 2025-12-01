@@ -1,7 +1,6 @@
 import Features from './Features'
 import '../css/JuniorStudent.css'
 import { useEffect, useState } from "react";
-import Features from './Features';
 
 function JuniorStudent() {
   const [data, setData] = useState(null);
@@ -44,8 +43,6 @@ function JuniorStudent() {
         <Features />
         <div className="right">
           <div>
-            <h2>Placement Dashboard</h2>
-            {/* ---- Experiences ---- */}
             {Array.isArray(data.experiences) && (
               <div>
                 <h3>Recent Experiences</h3>
@@ -149,94 +146,7 @@ function JuniorStudent() {
               <h4>Placement Trend (2024-25)</h4>
               <p>Monthly placement progress</p>
             </div>
-          </div>
-          <div className="section-2">
-            <h4>Recent Placement Experiences</h4>
-            <div><p>Learn from seniors' interview experiences</p></div>
-            <div className="exp">
-              <div className="exp-items">
-                <div id="heading" className='just-between'>
-                  <div>
-                    <h4>Amazon</h4>
-                    <div>SDE I</div>
-                  </div>
-                  <div id="star">
-                    <img src="svgs/star.svg" alt="" />
-                    <p>4.5</p>
-                  </div>
-                </div>
-                <div id="package" className='just-between'>
-                    <div><p>Package:</p></div>
-                  <div className='green-text bold font14 bold'>15.5 LPA</div>
-                </div>
-                <div id="difficulty" className='just-between'>
-                    <div><p>Difficulty:</p></div>
-                  <div className='hard-color bold'>Hard</div>
-                </div>
-                <div className="desc">
-                  Challenging but rewarding experience. Focus on DSA and system design...
-                </div>
-                <div className='provider just-between'>
-                  <div>By Vikash Kumar</div>
-                  <button className='place-btn'>Read More</button>
-                </div>
-              </div>
-              <div className="exp-items">
-                <div id="heading" className='just-between'>
-                  <div>
-                    <h4>Amazon</h4>
-                    <div>SDE I</div>
-                  </div>
-                  <div id="star">
-                    <img src="svgs/star.svg" alt="" />
-                    <p>4.5</p>
-                  </div>
-                </div>
-                <div id="package" className='just-between'>
-                    <div><p>Package:</p></div>
-                    <div className='green-text bold font14 bold'>15.5 LPA</div>
-                </div>
-                <div id="difficulty" className='just-between'>
-                    <div><p>Difficulty:</p></div>
-                    <div className='hard-color bold'>Hard</div>
-                </div>
-                <div className="desc">
-                  Challenging but rewarding experience. Focus on DSA and system design...
-                </div>
-                <div className='provider just-between'>
-                  <div>By Vikash Kumar</div>
-                  <button className='place-btn'>Read More</button>
-                </div>
-              </div>
-              <div className="exp-items">
-                <div id="heading" className='just-between'>
-                  <div>
-                    <h4>Amazon</h4>
-                    <div>SDE I</div>
-                  </div>
-                  <div id="star">
-                    <img src="svgs/star.svg" alt="" />
-                    <p>4.5</p>
-                  </div>
-                </div>
-                <div id="package" className='just-between'>
-                    <div><p>Package:</p></div>
-                    <div className='green-text bold font14 bold'>15.5 LPA</div>
-                </div>  
-                <div id="difficulty" className='just-between'>
-                    <div><p>Difficulty:</p></div>
-                  <div className='hard-color bold'>Hard</div>
-                </div>
-                <div className="desc">
-                  Challenging but rewarding experience. Focus on DSA and system design...
-                </div>
-                <div className='provider just-between'>
-                  <div>By Vikash Kumar</div>
-                  <button className='place-btn'>Read More</button>
-                </div>
-              </div>
-            </div>
-          </div>    
+          </div> 
           <div className="section-3">
              <h4>Recent Placement Experiences</h4>
             <div><p>Learn from seniors' interview experiences</p></div>

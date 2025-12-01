@@ -1,4 +1,5 @@
 import React from 'react'
+import LoginPopup from './LoginPopup'
 
 const Body = () => {
     return (
@@ -12,10 +13,6 @@ const Body = () => {
                         <h1> at DU</h1>
                         <span>Connecting Coordinators, HRs, Seniors, and Juniors seamlessly</span>
                         <span> for a smarter placement experience.</span>
-                    </div>
-                    <div id='home-btn'>
-                        <button className='home-btn'>Login</button>
-                        <button className='home-btn'>SignUp</button>
                     </div>  
                     <div className='stats'>
                         <div><h1>500</h1> <span>Students</span></div>

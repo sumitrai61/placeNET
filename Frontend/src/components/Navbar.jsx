@@ -1,18 +1,20 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+import LoginPopup from './LoginPopup'
 
 const Navbar = () => {
     return (
         <>
             <nav>
                 <ul className='nav'>
-                    <div className='nav-left'>
+                    <Link to="/" className='nav-left'>
                         <img id='logo' src="public/svgs/DU_Logo.png" alt="" />
-                        <span>DUCS PLACEMENTS </span>
-                    </div>
+                        <span className='white'>DUCS PLACEMENTS </span>
+                    </Link>
                     <div className="nav-right">
-                        <a href="/about">About</a>
-                        <a href="/contact">Contact</a>
-                        <button>Login</button>
+                        <Link to="/about">About</Link>
+                        <Link to="/contact">Contact</Link>
+                        <LoginPopup/>
                     </div>
                 </ul>
             </nav>

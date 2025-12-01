@@ -6,15 +6,21 @@
     font-family: "Poppins", sans-serif;
 }
 
+nav {
+    background-color: rgb(37, 36, 36);
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+}
+
 .nav {
     display: flex;
     gap: 34px;
-    position: sticky;
-    z-index: 10;
     padding: 10px;
     font-size: 20px;
     justify-content: space-around;
-    color: white;
+    /* color: white; */
 }
 
 .nav li {
@@ -30,8 +36,9 @@
     display: flex;
     align-items: center;
     gap: 10px;
-
     font-weight: bolder;
+    text-decoration: none;
+    color: white;
 }
 
 .nav-right {
@@ -43,7 +50,7 @@
 .nav-right a {
     text-decoration: none;
     transition: all 0.3s;
-    color: grey;
+    color: rgb(209, 213, 219);
     font-size: 15px;
     margin: 0 5px;
 }
@@ -53,7 +60,7 @@
 }
 
 .nav-right button {
-    padding: 10px 20px;
+    padding: 6px 20px;
     border-radius: 10px;
     cursor: pointer;
     background-color: rgb(37 99 235);
@@ -170,6 +177,8 @@
 }
 
 #heading {
+    display: flex;
+    flex-direction: column;
     text-align: center;
     font-weight: bolder;
 }

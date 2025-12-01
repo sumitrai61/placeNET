@@ -1,0 +1,50 @@
+.about-page {
+    position: relative;
+    z-index: 1;
+    min-height: 80vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 40px;
+}
+
+.about-page h1 {
+    font-size: 56px;
+    margin-bottom: 16px;
+}
+
+.about-subtitle {
+    font-size: 20px;
+    max-width: 800px;
+    margin: 0 auto 32px;
+}
+
+.about-grid {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.about-highlight {
+    background-color: rgba(15, 23, 42, 0.8);
+    border-radius: 12px;
+    padding: 24px 28px;
+    max-width: 360px;
+    text-align: left;
+}
+
+.about-highlight h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.about-highlight p {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+
