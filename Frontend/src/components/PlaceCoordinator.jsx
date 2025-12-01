@@ -5,7 +5,12 @@ import { useNavigate } from 'react-router-dom'
 
 const PlaceCoordinator = () => {
     const navigate = useNavigate()
-
+    const handleLogout = () => {
+        localStorage.removeItem("authToken");
+        localStorage.removeItem("userRole");
+        localStorage.removeItem("userName");
+        navigate("/");
+      };
 
     return (
         <>
