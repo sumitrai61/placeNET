@@ -1,0 +1,1 @@
+web: gunicorn du_mca_project.wsgi:application
