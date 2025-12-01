@@ -1,8 +1,10 @@
 import Features from './Features'
 import '../css/JuniorStudent.css'
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function JuniorStudent() {
+  const navigate = useNavigate();
   const [data, setData] = useState(null);
 
   useEffect(() => {
@@ -35,6 +37,12 @@ function JuniorStudent() {
 
     fetchPremium();
   }, []);
+
+  const handleLogout = () => {
+    localStorage.removeItem("authToken");
+    localStorage.removeItem("userRole");
+    navigate("/");
+  };
 
   if (!data) return <p>Loading dashboard...</p>;
   return (
@@ -73,7 +81,12 @@ function JuniorStudent() {
 
           <h1></h1>
 
-          <h1>Junior Student Dashboard</h1>
+          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "10px" }}>
+            <h1>Junior Student Dashboard</h1>
+            <button className="login-btn" onClick={handleLogout}>
+              Logout
+            </button>
+          </div>
           <p>Live placement updates and student experiences</p>
           <div className="statistics">
             <div className="stats-item">

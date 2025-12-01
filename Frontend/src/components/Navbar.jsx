@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import LoginPopup from './LoginPopup'
+import SignupPopup from './SignupPopup'
 
 const Navbar = () => {
     return (
@@ -14,7 +15,8 @@ const Navbar = () => {
                     <div className="nav-right">
                         <Link to="/about">About</Link>
                         <Link to="/contact">Contact</Link>
-                        <LoginPopup/>
+                        <LoginPopup />
+                        <SignupPopup />
                     </div>
                 </ul>
             </nav>

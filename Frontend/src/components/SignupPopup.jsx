@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../css/LoginPopup.css";
 
-const LoginPopup = () => {
+const SignupPopup = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [form, setForm] = useState({ email: "", password: "" });
+  const [form, setForm] = useState({ name: "", email: "", password: "" });
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
@@ -23,16 +23,18 @@ const LoginPopup = () => {
 
     try {
       const res = await fetch(
-        `${import.meta.env.VITE_API_URL}/api/accounts/login/`,
+        `${import.meta.env.VITE_API_URL}/api/accounts/register/`,
         {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
           },
           body: JSON.stringify({
-            // backend expects "username"; we use email as username
+            // use email as username for simplicity
             username: form.email,
             password: form.password,
+            email: form.email,
+            first_name: form.name,
           }),
         }
       );
@@ -40,12 +42,11 @@ const LoginPopup = () => {
       const data = await res.json();
 
       if (!res.ok) {
-        setError(data.error || "Failed to login. Please try again.");
+        setError(data.error || "Failed to sign up. Please try again.");
         setLoading(false);
         return;
       }
 
-      // Save token, role and basic user info for later API calls / UI
       const token = data.token;
       const role = data.student?.role;
       const user = data.user;
@@ -64,7 +65,7 @@ const LoginPopup = () => {
       // notify other components (like Navbar) that auth state changed
       window.dispatchEvent(new Event("authChanged"));
 
-      // Redirect based on role
+      // Redirect based on role (new users default to Junior unless PC/HR/etc.)
       if (role === "Junior") {
         navigate("/junior");
       } else if (role === "Senior") {
@@ -72,13 +73,12 @@ const LoginPopup = () => {
       } else if (role === "PC") {
         navigate("/pc");
       } else {
-        // fallback: go to home
         navigate("/");
       }
 
       setIsOpen(false);
     } catch (err) {
-      console.error("Login error:", err);
+      console.error("Signup error:", err);
       setError("Something went wrong. Please try again.");
     } finally {
       setLoading(false);
@@ -88,14 +88,14 @@ const LoginPopup = () => {
   return (
     <>
       <button className="login-btn" onClick={() => setIsOpen(true)}>
-        Login
+        Sign Up
       </button>
 
       {isOpen && (
         <div className="login-modal-overlay" onClick={() => setIsOpen(false)}>
           <div
             className="login-modal"
-            onClick={(e) => e.stopPropagation()} // prevent closing when clicking inside box
+            onClick={(e) => e.stopPropagation()}
           >
             <div className="login-header">
               <div className="login-title">
@@ -105,17 +105,29 @@ const LoginPopup = () => {
                   className="login-cap-icon"
                 />
                 <div>
-                  <h2>Login</h2>
-                  <p className="login-subtitle">Enter your credentials to continue</p>
+                  <h2>Sign Up</h2>
+                  <p className="login-subtitle">Create your account to access placements</p>
                 </div>
               </div>
             </div>
             <form onSubmit={handleSubmit}>
               {error && <p className="login-error">{error}</p>}
               <div className="form-group">
-                <label htmlFor="email">Email</label>
+                <label htmlFor="signup-name">Name</label>
                 <input
-                  id="email"
+                  id="signup-name"
+                  name="name"
+                  type="text"
+                  value={form.name}
+                  onChange={handleChange}
+                  placeholder="Enter your name"
+                  required
+                />
+              </div>
+              <div className="form-group">
+                <label htmlFor="signup-email">Email</label>
+                <input
+                  id="signup-email"
                   name="email"
                   type="email"
                   value={form.email}
@@ -126,9 +138,9 @@ const LoginPopup = () => {
               </div>
 
               <div className="form-group">
-                <label htmlFor="password">Password</label>
+                <label htmlFor="signup-password">Password</label>
                 <input
-                  id="password"
+                  id="signup-password"
                   name="password"
                   type="password"
                   value={form.password}
@@ -154,4 +166,6 @@ const LoginPopup = () => {
   );
 };
 
-export default LoginPopup;
+export default SignupPopup;
+
+

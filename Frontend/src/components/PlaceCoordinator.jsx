@@ -1,11 +1,26 @@
 import React from 'react'
 import Features from './Features'
 import '../css/PlaceCoordinator.css'
+import { useNavigate } from 'react-router-dom'
+
 const PlaceCoordinator = () => {
+    const navigate = useNavigate()
+
+    const handleLogout = () => {
+        localStorage.removeItem('authToken')
+        localStorage.removeItem('userRole')
+        navigate('/')
+    }
+
     return (
         <>
             <Features />
             <div className="right">
+                <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '10px' }}>
+                    <button className="login-btn" onClick={handleLogout}>
+                        Logout
+                    </button>
+                </div>
                 <h2>Placement Coordinator Dashboard</h2>
                 <p>Manage placements and coordinate with companies</p>
                 <div className="statistics">

@@ -84,6 +84,27 @@
     padding: 10px;
     height: 50vh;
 }
+.placement-line-wrapper {
+    margin-top: 10px;
+    width: 100%;
+    height: calc(100% - 60px); /* keep overall box size the same */
+}
+
+.placement-line-chart {
+    width: 100%;
+    height: 100%;
+}
+
+.placement-month-label {
+    font-size: 11px;
+    fill: #6b7280;
+}
+
+.placement-note {
+    margin-top: 8px;
+    font-size: 11px;
+    color: grey;
+}
 .section-2{
     border: 2px solid rgb(115, 114, 114);
     border-radius: 10px;

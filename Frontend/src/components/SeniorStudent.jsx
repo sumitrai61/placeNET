@@ -1,11 +1,26 @@
 import Features from './Features'
 import '../css/SeniorStudent.css'
+import { useNavigate } from 'react-router-dom'
+
 const SeniorStudent = () => {
+  const navigate = useNavigate()
+
+  const handleLogout = () => {
+    localStorage.removeItem('authToken')
+    localStorage.removeItem('userRole')
+    navigate('/')
+  }
+
   return (
     <>
       <div className="main1">
         <Features />
         <div className="right_Sen">
+          <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '10px' }}>
+            <button className="login-btn" onClick={handleLogout}>
+              Logout
+            </button>
+          </div>
           <h1>Senior Student Dashboard</h1>
           <p>Share your placement experiences and help juniors</p>
           <div className="statistics_Sen">
