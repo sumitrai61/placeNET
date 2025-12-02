@@ -6,7 +6,7 @@ const About = () => {
     <div className="container">
       <div className="box"></div>
       <section className="about-page">
-        <h1>About DUCS Placements</h1>
+        <h1>About LPUCS Placements</h1>
         <p className="about-subtitle">
           A centralized platform that connects coordinators, HRs, seniors and juniors
           for a smarter, transparent and data-driven placement experience.

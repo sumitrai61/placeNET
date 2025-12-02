@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="footer">
         <div id='logo'>
           <img src="public/svgs/DU_Logo.png" alt="" />
-          <h1>DU MCA PLACEMENT</h1>
+          <h1>LPU MCA PLACEMENT</h1>
         </div>
         <div>
             <h1>Quick Links</h1>
@@ -24,9 +24,9 @@ const Footer = () => {
         </div>
         <div>
           <h1>Contact Info</h1>
-            <div className='foot-svg'><img src="public/email.svg" alt="" />placement@du.ac.in</div>
+            <div className='foot-svg'><img src="public/email.svg" alt="" />placement@lpu.ac.in</div>
             <div className='foot-svg'><img src="public/telephone.svg" alt="" />+91 11 2766 7208</div>
-            <div className='foot-svg'><img src="public/location.svg" alt="" />Delhi University, Delhi</div>
+            <div className='foot-svg'><img src="public/location.svg" alt="" />LPU, Punjab</div>
         </div>
       </div>
       <div className="separator">

@@ -10,7 +10,7 @@ const Body = () => {
                 <div className="home">
                     <div id='info'>
                         <h1>Streamlining MCA Placements</h1>
-                        <h1> at DU</h1>
+                        <h1> at LPU</h1>
                         <span>Connecting Coordinators, HRs, Seniors, and Juniors seamlessly</span>
                         <span> for a smarter placement experience.</span>
                     </div>  
