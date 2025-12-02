@@ -94,12 +94,28 @@ WSGI_APPLICATION = 'du_mca_project.wsgi.application'
 
 # ===== DATABASE (Postgres via DATABASE_URL, fallback to SQLite) =====
 # Make sure dj_database_url is installed: pip install dj-database-url
+
+
+# ===== DATABASE (Postgres on Render | SQLite locally) =====
+
 DATABASES = {
-    'default': dj_database_url.config(
-        default=os.environ.get("postgresql://placenet_db_user:FJozcuMxfSYORkfJmyYE6iSTU0yczgk8@dpg-d4n7aiali9vc73fd0pvg-a.singapore-postgres.render.com/placenet_db"),
-        conn_max_age=600
-    )
+    "default": {
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": BASE_DIR / "db.sqlite3",
+    }
 }
+
+DATABASE_URL = os.getenv("DATABASE_URL")
+
+if DATABASE_URL:
+    DATABASES["default"] = dj_database_url.parse(
+        DATABASE_URL,
+        conn_max_age=600,
+        ssl_require=True
+    )
+
+
+
 
 
 
