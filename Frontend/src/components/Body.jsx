@@ -1,6 +1,3 @@
-import React from 'react'
-import LoginPopup from './LoginPopup'
-
 const Body = () => {
     return (
         <>
