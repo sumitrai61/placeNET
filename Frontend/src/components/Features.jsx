@@ -50,7 +50,7 @@ const Features = () => {
       <div className="main">
         <div className="heading">
           <div className="heading-content">
-            <h1>DU MCA PORTAL</h1>
+            <h1>LPU MCA PORTAL</h1>
             <p>Placement Management</p>
           </div>
           <button className="hamburger-btn" onClick={toggleMenu} aria-label="Toggle menu">
