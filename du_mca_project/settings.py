@@ -95,10 +95,9 @@ WSGI_APPLICATION = 'du_mca_project.wsgi.application'
 # ===== DATABASE (Postgres via DATABASE_URL, fallback to SQLite) =====
 # Make sure dj_database_url is installed: pip install dj-database-url
 DATABASES = {
-    "default": dj_database_url.config(
-        default=f"sqlite:///{BASE_DIR / 'db.sqlite3'}",  # local fallback
-        conn_max_age=600,   # keep DB connections open for performance
-        ssl_require=False   # set True if your DB requires SSL
+    'default': dj_database_url.config(
+        default=os.environ.get("postgresql://placenet_db_user:FJozcuMxfSYORkfJmyYE6iSTU0yczgk8@dpg-d4n7aiali9vc73fd0pvg-a.singapore-postgres.render.com/placenet_db"),
+        conn_max_age=600
     )
 }
 
