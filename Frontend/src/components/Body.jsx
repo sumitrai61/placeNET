@@ -15,10 +15,10 @@ const Body = () => {
                         <span> for a smarter placement experience.</span>
                     </div>  
                     <div className='stats'>
-                        <div><h1>500</h1> <span>Students</span></div>
-                        <div><h1>150</h1> <span>Companies</span></div>
-                        <div><h1>95%</h1> <span>Placement</span></div>
-                        <div><h1>12LPA</h1> <span>LPA Average</span></div>
+                        <div><h1>65</h1> <span>Students</span></div>
+                        <div><h1>20</h1> <span>Companies</span></div>
+                        <div><h1>63%</h1> <span>Placement</span></div>
+                        <div><h1>10LPA</h1> <span>LPA Average</span></div>
                     </div>
                 </div>
             </div>
@@ -71,14 +71,14 @@ const Body = () => {
                         <span>Our track record speaks for itself - empowering students to achieve their career goals</span>
                     </div>
                     <div className='first'>
-                        <div><h1>2500</h1> <span>Students Placed</span></div>
-                        <div><h1>250</h1> <span>Partner Companies</span></div>
-                        <div><h1>96%</h1> <span>Placement Rate</span></div>
-                        <div><h1>15LPA</h1> <span>Highest Package</span></div>
+                        <div><h1>304</h1> <span>Students Placed</span></div>
+                        <div><h1>60</h1> <span>Partner Companies</span></div>
+                        <div><h1>70%</h1> <span>Placement Rate</span></div>
+                        <div><h1>12LPA</h1> <span>Highest Package</span></div>
                     </div>
                     <div className='first'>
-                        <div><h1>450</h1> <span>This Year Placements</span></div>
-                        <div><h1>85</h1> <span>Companies visiting</span></div>
+                        <div><h1>42</h1> <span>This Year Placements</span></div>
+                        <div><h1>40</h1> <span>Companies visiting</span></div>
                         <div><h1>8.5 LPA</h1> <span>Average Package</span></div>
                     </div>
                 </div>
