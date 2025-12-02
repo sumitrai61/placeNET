@@ -72,161 +72,176 @@ Seniors (seniors app)
 
 🎨 Frontend UI Components (React)
 
-Component library includes:
-
-Navbar, Footer, Menu
-
-LoginPopup, SignupPopup
-
-JuniorStudent, SeniorStudent, PlaceCoordinator
-
-Features, Body, About, Contact
-
-LivePlacements, Experiences
-
-LeftSide dashboard layout component
-
-Responsive UI with JSX + CSS modules.
-
-API consumption via fetch calls (environment variable based).
+    Component library includes:
+    
+    Navbar, Footer, Menu
+    
+    LoginPopup, SignupPopup
+    
+    JuniorStudent, SeniorStudent, PlaceCoordinator
+    
+    Features, Body, About, Contact
+    
+    LivePlacements, Experiences
+    
+    LeftSide dashboard layout component
+    
+    Responsive UI with JSX + CSS modules.
+    
+    API consumption via fetch calls (environment variable based).
 
 
 🛠️ Tech Stack
-Backend
+Backend:-
 
-Python 3.x
+    Python 3.x
+    
+    Django
+    
+    Django REST Framework
+    
+    SQLite (dev)
+    
+    Token-based authentication
 
-Django
+Frontend:-
 
-Django REST Framework
-
-SQLite (dev)
-
-Token-based authentication
-
-Frontend
-
-React (JSX)
-
-Vite (most likely)
-
-CSS modules
+    React (JSX)
+    
+    Vite (most likely)
+    
+    CSS modules
 
 Environment-based API routing
 
 🔧 Installation & Setup
 1️⃣ Clone the Repository
 
-git clone https://github.com/sumitrai61/placeNET.git
-cd placeNET
+    git clone https://github.com/sumitrai61/placeNET.git
+    cd placeNET
 
 ⚙️ Backend Setup (Django)
 Create Virtual Environment
 
-cd Backend
-python -m venv venv
+    cd Backend
+    python -m venv venv
 
 Activate venv:
 windows: 
-venv\Scripts\activate
+
+    venv\Scripts\activate
 
 mac/linux
-source venv/bin/activate
+
+    source venv/bin/activate
 
 Install Dependencies
-pip install -r requirements.txt
+
+    pip install -r requirements.txt
 
 Run Migrations
-python manage.py migrate
+
+    python manage.py migrate
 
 Create Superuser (optional)
-python manage.py createsuperuser
+
+    python manage.py createsuperuser
 
 Start Server
-python manage.py runserver
+
+    python manage.py runserver
 
 Backend runs at:
-http://127.0.0.1:8000/
+
+    http://127.0.0.1:8000/
 
 
 🎨 Frontend Setup (React)
 
-cd Frontend
-npm install
+    cd Frontend
+    npm install
 
 Add environment variable
-Create .env:
 
-VITE_API_URL=http://127.0.0.1:8000
+    Create .env:
+
+    VITE_API_URL=http://127.0.0.1:8000
+    
 Start Development Server
 
-npm run dev
+    npm run dev
 
 Frontend runs at:
-http://localhost:5173/  (Vite default)
+    
+    http://localhost:5173/  (Vite default)
 
 
 🌐 API Endpoints (High-Level Summary)
 Authentication
 
-/api/accounts/login/
-/api/accounts/signup/
-/api/accounts/logout/
+    /api/accounts/login/
+    /api/accounts/signup/
+    /api/accounts/logout/
 
 Juniors
-/api/juniors/profile/
-/api/juniors/placements/
-/api/juniors/experiences/
+
+    /api/juniors/profile/
+    /api/juniors/placements/
+    /api/juniors/experiences/
 
 Seniors
-/api/seniors/experiences/
-/api/seniors/profile/
+
+    /api/seniors/experiences/
+    /api/seniors/profile/
 
 Companies
-/api/companies/jobs/
-/api/companies/register/
-/api/companies/applicants/
+
+    /api/companies/jobs/
+    /api/companies/register/
+    /api/companies/applicants/
 
 Placement Coordinator
-/api/pc/announcements/
-/api/pc/manage-jobs/
-/api/pc/dashboard/
+
+    /api/pc/announcements/
+    /api/pc/manage-jobs/
+    /api/pc/dashboard/
 
 
 🚀 Deployment Notes
+
 Frontend (Vercel)
 
-1. Set build command: npm run build
-
-2. Set output directory: dist
-
-3. Add environment variable:
-VITE_API_URL=https://your-backend-url.com
+    1. Set build command: npm run build
+    
+    2. Set output directory: dist
+    
+    3. Add environment variable:
+    VITE_API_URL=https://your-backend-url.com
 
 
 Backend (Railway / Render / PythonAnywhere)
 
-1. Install requirements
-
-2. Collect static files
-
-3. Run using gunicorn or built-in WSGI server
+    1. Install requirements
+    
+    2. Collect static files
+    
+    3. Run using gunicorn or built-in WSGI server
 
 🤝 Contributing
 
-1. Fork the repository
-
-2. Create a feature branch
-
-3. Commit changes
-
-4. Push and open a Pull Request
+    1. Fork the repository
+    
+    2. Create a feature branch
+    
+    3. Commit changes
+    
+    4. Push and open a Pull Request
 
 📄 License
 
 Add your license here (MIT recommended).
 
-🧑‍💻 Author
+🧑‍💻 Author    
 
-Sumit Rai
-GitHub: https://github.com/sumitrai61
+    Sumit Rai
+    GitHub: https://github.com/sumitrai61
