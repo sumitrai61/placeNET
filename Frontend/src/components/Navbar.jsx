@@ -9,7 +9,7 @@ const Navbar = () => {
             <nav>
                 <ul className='nav'>
                     <Link to="/" className='nav-left'>
-                        <img id='logo' src="public/svgs/DU_Logo.png" alt="" />
+                        <img id='logo' src="/svgs/DU_Logo.png" alt="" />
                         <span className='white'>placeNET </span>
                     </Link>
                     <div className="nav-right">

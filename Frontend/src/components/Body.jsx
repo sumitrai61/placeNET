@@ -28,32 +28,32 @@ const Body = () => {
 
                     <div className="cards">
                         <div className="about-card">
-                            <div className='svg'><img src="public/svgs/clock.svg" alt="" /></div>
+                            <div className='svg'><img src="/svgs/clock.svg" alt="" /></div>
                         <h3>Real-Time Updates</h3>
                         <p>Get instant notifications about interview schedules, results, and placement opportunities</p>
                         </div>
                         <div className="about-card">
-                            <div className='svg'><img src="public/svgs/person.svg" alt="" /></div>
+                            <div className='svg'><img src="/svgs/person.svg" alt="" /></div>
                         <h3>Collaborative Platform</h3>
                         <p>Connect coordinators, HRs, and students in one unified ecosystem</p>
                         </div>
                         <div className="about-card">
-                            <div className='svg'><img src="public/svgs/tick.svg" alt="" /></div>
+                            <div className='svg'><img src="/svgs/tick.svg" alt="" /></div>
                         <h3>Analytics Dashboard</h3>
                         <p>Track placement statistics, success rates, and performance metrics</p>
                         </div>
                         <div className="about-card">
-                            <div className='svg'><img src="public/svgs/mobile.svg" alt="" /></div>
+                            <div className='svg'><img src="/svgs/mobile.svg" alt="" /></div>
                         <h3>Mobile Responsive</h3>
                         <p>Access the platform seamlessly across all devices and screen sizes</p>
                         </div>
                         <div className="about-card">
-                            <div className='svg'><img src="public/svgs/guard.svg" alt="" /></div>
+                            <div className='svg'><img src="/svgs/guard.svg" alt="" /></div>
                         <h3>Secure & Private</h3>
                         <p>Enterprise-grade security with DU email authentication and data protection</p>
                         </div>
                         <div className="about-card">
-                            <div className='svg'><img src="public/svgs/cap.svg" alt="" /></div>
+                            <div className='svg'><img src="/svgs/cap.svg" alt="" /></div>
                         <h3>Mentor Network</h3>
                         <p>Connect with seniors for guidance, tips, and interview preparation</p>
                         </div>

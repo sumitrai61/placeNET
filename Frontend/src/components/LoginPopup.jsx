@@ -100,7 +100,7 @@ const LoginPopup = () => {
             <div className="login-header">
               <div className="login-title">
                 <img
-                  src="public/svgs/cap.svg"
+                  src="/svgs/cap.svg"
                   alt="Scholar cap"
                   className="login-cap-icon"
                 />

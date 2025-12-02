@@ -62,21 +62,21 @@ const Features = () => {
         <div className={`menu-content ${isMenuOpen ? 'menu-open' : ''}`}>
           <div className="line"></div>
           <div className="function">
-            <Link to={getDashboardRoute()} className='func-item' onClick={() => setIsMenuOpen(false)}><img src="public/svgs/dashboard.svg" alt="..." />Dashboard</Link>
-            {/* <Link className='func-item'><img src="public/svgs/message.svg" alt="..." />Messages</Link> */}
-            <Link to="/live" className='func-item' onClick={() => setIsMenuOpen(false)}><img src="public/svgs/placement.svg" alt="..." />Live Placements</Link>
-            <Link to="/experiences" className='func-item' onClick={() => setIsMenuOpen(false)}><img src="public/svgs/book.svg" alt="..." />Experiences</Link>
-            {/* <Link className='func-item'><img src="public/svgs/stats.svg" alt="..." />Statistics</Link> */}
+            <Link to={getDashboardRoute()} className='func-item' onClick={() => setIsMenuOpen(false)}><img src="/svgs/dashboard.svg" alt="..." />Dashboard</Link>
+            {/* <Link className='func-item'><img src="/svgs/message.svg" alt="..." />Messages</Link> */}
+            <Link to="/live" className='func-item' onClick={() => setIsMenuOpen(false)}><img src="/svgs/placement.svg" alt="..." />Live Placements</Link>
+            <Link to="/experiences" className='func-item' onClick={() => setIsMenuOpen(false)}><img src="/svgs/book.svg" alt="..." />Experiences</Link>
+            {/* <Link className='func-item'><img src="/svgs/stats.svg" alt="..." />Statistics</Link> */}
           </div>
           <div className="line"></div>
           <div className="feature-bottom">
             <div className="user">
-              <img src="public/svgs/user.svg" alt="" />
+              <img src="/svgs/user.svg" alt="" />
               <div id='profile'>
                 <div id="name">{displayName}</div>
                 <div id="role">{displayRole}</div> 
               </div>
-              <img id='arrow' src="public/svgs/tullu.svg" alt="" />
+              <img id='arrow' src="/svgs/tullu.svg" alt="" />
             </div>
             <button className="logout-btn" onClick={handleLogout}>
               Logout
