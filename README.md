@@ -26,49 +26,49 @@ Permissions handled at API level.
 Password handling & validation.
 
 🎓 Student Modules
-Juniors (juniors app)
-
-Junior student profile management.
-
-View placement updates.
-
-Access experiences posted by seniors.
-
-Personalized dashboard.
+    Juniors (juniors app)
+    
+    Junior student profile management.
+    
+    View placement updates.
+    
+    Access experiences posted by seniors.
+    
+    Personalized dashboard.
 
 Seniors (seniors app)
 
-Add & manage placement experiences.
-
-Share interview tips and guidance.
-
-View and update personal details.
+    Add & manage placement experiences.
+    
+    Share interview tips and guidance.
+    
+    View and update personal details.
 
 🏢 Company / HR Management (companies + hr apps)
 
-Company details & job postings.
-
-HR login and management panel.
-
-Upload job opportunities for students.
-
-View student applications.
+    Company details & job postings.
+    
+    HR login and management panel.
+    
+    Upload job opportunities for students.
+    
+    View student applications.
 
 🎯 Placement Coordinator Panel (pc app)
 
-Manage announcements.
-
-Approve or reject job postings.
-
-Monitor student progress.
-
-Admin-like dashboards.
+    Manage announcements.
+    
+    Approve or reject job postings.
+    
+    Monitor student progress.
+    
+    Admin-like dashboards.
 
 🔧 Core Utilities (core + utils apps)
 
-Common reusable logic for the entire project.
-
-Settings, middleware, helpers, token utilities.
+    Common reusable logic for the entire project.
+    
+    Settings, middleware, helpers, token utilities.
 
 🎨 Frontend UI Components (React)
 
@@ -89,68 +89,6 @@ LeftSide dashboard layout component
 Responsive UI with JSX + CSS modules.
 
 API consumption via fetch calls (environment variable based).
-
-🧱 Project Structure
-PLACENET/
-│
-├── Backend/
-│   ├── accounts/
-│   ├── companies/
-│   ├── core/
-│   ├── du_mca_project/
-│   ├── hr/
-│   ├── juniors/
-│   ├── pc/
-│   ├── seniors/
-│   ├── utils/
-│   ├── db.sqlite3
-│   ├── manage.py
-│   ├── requirements.txt
-│   └── README.md
-│
-└── Frontend/
-    ├── public/
-    ├── src/
-    │   ├── components/
-    │   │   ├── About.jsx
-    │   │   ├── Body.jsx
-    │   │   ├── Contact.jsx
-    │   │   ├── Experiences.jsx
-    │   │   ├── Features.jsx
-    │   │   ├── Footer.jsx
-    │   │   ├── JuniorStudent.jsx
-    │   │   ├── LeftSide.jsx
-    │   │   ├── LivePlacements.jsx
-    │   │   ├── LoginPopup.jsx
-    │   │   ├── Menu.jsx
-    │   │   ├── Navbar.jsx
-    │   │   ├── PlaceCoordinator.jsx
-    │   │   ├── SeniorStudent.jsx
-    │   │   ├── SignupPopup.jsx
-    │   │
-    │   ├── css/
-    │   │   ├── About.css
-    │   │   ├── App.css
-    │   │   ├── Contact.css
-    │   │   ├── Experiences.css
-    │   │   ├── features.css
-    │   │   ├── index.css
-    │   │   ├── JuniorStudent.css
-    │   │   ├── LivePlacements.css
-    │   │   ├── LoginPopup.css
-    │   │   ├── PlaceCoordinator.css
-    │   │   ├── SeniorStudent.css
-    │   │   ├── utility.css
-    │   │
-    │   ├── App.jsx
-    │   └── main.jsx
-    │
-    ├── .env
-    ├── index.html
-    ├── package.json
-    ├── package-lock.json
-    ├── vite.config.js
-    └── README.md
 
 
 🛠️ Tech Stack
