@@ -105,7 +105,8 @@ DATABASES = {
     }
 }
 
-DATABASE_URL = os.getenv("DATABASE_URL")
+DATABASE_URL = os.getenv("postgresql://placenet_db_user:FJozcuMxfSYORkfJmyYE6iSTU0yczgk8@dpg-d4n7aiali9vc73fd0pvg-a.singapore-postgres.render.com/placenet_db
+")
 
 if DATABASE_URL:
     DATABASES["default"] = dj_database_url.parse(
